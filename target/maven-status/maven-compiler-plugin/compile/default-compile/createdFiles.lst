@@ -1,6 +1,0 @@
-beans\Alquiler.class
-servlets\PruebaServlet.class
-beans\Usuarios.class
-test\OperationsDB.class
-beans\Motocicleta.class
-connection\DBConnection.class
