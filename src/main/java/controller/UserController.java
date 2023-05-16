@@ -57,4 +57,41 @@ public class UserController implements IUserController
 
     }
 
+    @Override
+    public String register(String userName, String contrasena, String nombres, String apellidos, String email, String celular)
+    {
+        Gson gson = new Gson();
+        DBConnection con = new DBConnection();
+        String sql = "insert into usuarios values ('" + userName + "','"
+                + contrasena + "','" + nombres + "','" + apellidos + "','"
+                + email + "','" + 1 + "','" + celular + "')";
+        try
+        {
+
+            Statement st = con.getConnection().createStatement();
+            int rows = st.executeUpdate(sql);
+            if (rows > 0)
+            {
+                Usuarios usuarios = new Usuarios();
+                usuarios.setNombres(nombres);
+                usuarios.setApellidos(apellidos);
+                usuarios.setUserName(userName);
+                usuarios.setContrasena(contrasena);
+                usuarios.setEmail(email);
+                usuarios.setCelular(celular);
+                usuarios.setPremium(1);
+                return gson.toJson(usuarios);
+
+            }
+            return "false";
+        } catch (SQLException e)
+        {
+            System.out.println(e.getMessage());
+            return "false";
+        } finally
+        {
+            con.disconnect();
+        }
+    }
+
 }

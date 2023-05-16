@@ -15,6 +15,112 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         <script src="js/index.js"></script>
     </head>
     <body>
-        <div>Registrar</div>
+        <div class="login-page bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1">
+                        <h3 class="mb-3">Registrar Usuario</h3>
+                        <div class="bg-white shadow rounded">
+                            <form id="form-register" action="">
+                                <div class="row">
+                                    <div class="col-md-6 pe-0">
+                                        <div class="form-left py-3 px-3">
+                                            <div class="col-12">
+                                                <label>Nombre de Usuario<span class="text-danger">*</span></label>
+                                                <div class="input-group">
+                                                    <div class="input-group-text"><i class="bi bi-person-fill"></i></div>
+                                                    <input type="text" class="form-control" placeholder="Ingrese Usuario" id="input-username" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 pe-0">
+                                        <div class="form-left py-3 px-3">
+                                            <label>Contraseña<span class="text-danger">*</span></label>
+                                            <div class="input-group">
+                                                <div class="input-group-text"><i class="bi bi-lock-fill"></i></div>
+                                                <input type="password" class="form-control" placeholder="Ingrese Contraseña" id="input-contrasena" required>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 pe-0">
+                                        <div class="form-left py-3 px-3">
+
+                                            <div class="col-12">
+                                                <label>Repetir contraseña<span class="text-danger">*</span></label>
+                                                <div class="input-group">
+                                                    <div class="input-group-text"><i class="bi bi-person-fill"></i></div>
+                                                    <input type="password" class="form-control" placeholder="Repetir contraseña" id="input-repetir-contrasena" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 pe-0">
+                                        <div class="form-left py-3 px-3">
+                                            <label>Nombres<span class="text-danger">*</span></label>
+                                            <div class="input-group">
+                                                <div class="input-group-text"><i class="bi bi-lock-fill"></i></div>
+                                                <input type="text" class="form-control" placeholder="Ingrese Nombres" id="input-nombres" required>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 pe-0">
+                                        <div class="form-left py-3 px-3">
+
+                                            <div class="col-12">
+                                                <label>Apellidos<span class="text-danger">*</span></label>
+                                                <div class="input-group">
+                                                    <div class="input-group-text"><i class="bi bi-person-fill"></i></div>
+                                                    <input type="text" class="form-control" placeholder="Ingrese Apellidos" id="input-apellidos" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 pe-0">
+                                        <div class="form-left py-3 px-3">
+                                            <label>Email<span class="text-danger">*</span></label>
+                                            <div class="input-group">
+                                                <div class="input-group-text"><i class="bi bi-lock-fill"></i></div>
+                                                <input type="text" class="form-control" placeholder="Ingrese Correo" id="input-email" required>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 pe-0">
+                                        <div class="form-left py-3 px-3">
+
+                                            <div class="col-12">
+                                                <label>Celular<span class="text-danger">*</span></label>
+                                                <div class="input-group">
+                                                    <div class="input-group-text"><i class="bi bi-person-fill"></i></div>
+                                                    <input type="text" class="form-control" placeholder="Ingrese Celular" id="input-celular" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary px-4 float-start " id="btnRegister">Registrar datos</button>
+                                        <a class="btn btn-primary px-4 float-end  px-4" href="index.html">Regresar al Login</a>  
+                                    </div>
+                                </div>
+                            </form>
+                            <div id="register-error" class="alert alert-danger d-none" role="alert"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
