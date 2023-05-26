@@ -9,7 +9,7 @@ public class Motocicleta
 
     private int id;
     private String marca;
-    private double valor;
+    private String valor;
     private String modelo;
     private int disponibles;
     private String comentarios;
@@ -18,7 +18,7 @@ public class Motocicleta
     {
     }
 
-    public Motocicleta(int id, String marca, double valor, String modelo, int disponibles, String comentarios)
+    public Motocicleta(int id, String marca, String valor, String modelo, int disponibles, String comentarios)
     {
         this.id = id;
         this.marca = marca;
@@ -48,12 +48,12 @@ public class Motocicleta
         this.marca = marca;
     }
 
-    public double getValor()
+    public String getValor()
     {
         return valor;
     }
 
-    public void setValor(double valor)
+    public void setValor(String valor)
     {
         this.valor = valor;
     }

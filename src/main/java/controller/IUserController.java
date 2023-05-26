@@ -11,4 +11,6 @@ public interface IUserController
 
     public String register(String userName, String contrasena, String nombres,
             String apellidos, String email, String celular);
+    
+    public String find(String userName);
 }

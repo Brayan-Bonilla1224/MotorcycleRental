@@ -49,7 +49,7 @@ public class OperationsDB
             {
                 int id = rs.getInt("id");
                 String marca = rs.getString("marca");
-                double valor = rs.getDouble("valor");
+                String valor = rs.getString("valor");
                 String modelo = rs.getString("modelo");
                 int disponibles = rs.getInt("disponibles");
                 String comentarios = rs.getString("comentarios");
